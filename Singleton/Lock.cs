@@ -13,7 +13,7 @@
 			Console.WriteLine("Lock Instance Created. Counter Value: " + Counter);
 		}
 
-		public static Lock GetInstance()
+		public static Lock GetInstance(string name)
 		{
 			//This is thread-safe
 			//As long as one thread locks the resource, no other thread can access the resource
@@ -27,7 +27,7 @@
 				}
 			}
 			return Instance;
-		}
+		 }
 
 		public string GetSetting(string key)
 		{
